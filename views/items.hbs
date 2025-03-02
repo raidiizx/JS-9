@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p style="font-size: 120px;">Items list.</p>
+    <ol>
+        {{#each items}}
+        <a href="{{this.urls}}">
+            <li>{{this.name}}</li>
+        </a>
+        {{/each}}
+    </ol>
+</body>
+
+</html>
