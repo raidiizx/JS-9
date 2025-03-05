@@ -19,9 +19,7 @@ app.get('/items', async (req, res) => {
     res.render('items', { items })
 })
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+app.listen(port, () => { });
 
 async function getSiteList() {
     const response = await fetch('https://theindex.moe/api/items')
